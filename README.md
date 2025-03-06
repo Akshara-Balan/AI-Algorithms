@@ -24,5 +24,5 @@ Experiments include:
 
 * Travelling Salesman Problem
 
-* Water sort puzzle
+* Water Jug Problem
   
