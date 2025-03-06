@@ -14,6 +14,10 @@ Experiments include:
 
 * Minimax Algorithm
 
+* N Queen's Algorithm
+
+* Tower of Hanoi
+
 * Backtracking for CSP
 
 * Local Search algorithms for CSP
