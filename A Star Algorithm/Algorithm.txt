@@ -1,0 +1,18 @@
+A* (A-star) is a pathfinding and graph traversal algorithm that finds the shortest path from a start node to a goal node. It uses a combination of g(n) (the cost to reach a node) and h(n) (a heuristic estimating the cost from the node to the goal).
+Algorithm Steps:
+
+    Initialize:
+        Create an open list (nodes to explore) and a closed list (visited nodes).
+        Add the start node to the open list with cost 0.
+
+    Loop until the goal is reached or no nodes remain:
+        Pick the node with the lowest f(n) = g(n) + h(n) from the open list.
+        If this node is the goal, return the path.
+        Move the node from open list to closed list.
+
+    Expand neighbors:
+        For each neighbor, calculate g(n), the actual cost from the start.
+        Compute f(n) = g(n) + h(n).
+        If the neighbor has a lower cost path, update it in the open list.
+
+    Repeat until the goal is reached or the open list is empty.

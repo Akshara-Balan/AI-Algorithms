@@ -1,0 +1,13 @@
+1. Initialize open_list = [(start, 0)] and closed_list = {}
+2. While open_list is not empty:
+    a. Sort open_list based on f(n) = g(n) + h(n)
+    b. Select the node with the lowest f(n), call it 'current'
+    c. If current == goal, return the path
+    d. Move current from open_list to closed_list
+    e. Expand all neighbors of current:
+        - Calculate g(neighbor) = g(current) + cost(current → neighbor)
+        - Calculate f(neighbor) = g(neighbor) + h(neighbor)
+        - If neighbor is not in closed_list or has a lower g-cost:
+            - Add/update neighbor in open_list with new f-cost
+            - Store the path to neighbor
+3. If open_list is empty, return "No Path Found"
