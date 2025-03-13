@@ -1,0 +1,28 @@
+1. Initialize an empty list visited to keep track of visited nodes.
+
+
+2. Initialize a stack frontier to store nodes that need to be explored.
+
+
+3. Take input for the start node (st) and goal node (gt).
+
+
+4. Add the start node to visited and frontier.
+
+
+5. While the stack (frontier) is not empty:
+
+Remove the last node from frontier (LIFO principle).
+
+Print the current node to track traversal.
+
+If the current node is the goal node (gt), exit the loop.
+
+Otherwise, for each neighbor of the current node:
+
+If the neighbor has not been visited, add it to visited and frontier.
+
+
+
+
+6. The search continues until the goal node is found or all nodes are explored.
