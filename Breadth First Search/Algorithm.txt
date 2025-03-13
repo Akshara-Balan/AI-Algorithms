@@ -1,0 +1,26 @@
+1. Initialize an empty list visited to keep track of visited nodes.
+
+
+2. Initialize a queue neigh to store the nodes to be explored.
+
+
+3. Take input for the start node (st) and goal node (gt).
+
+
+4. Add the start node to visited and neigh.
+
+
+5. While the queue (neigh) is not empty:
+
+Remove the first node from neigh (FIFO principle).
+
+If the current node is the goal node (gt), exit the loop.
+
+Otherwise, for each neighbor of the current node:
+
+If the neighbor has not been visited, add it to visited and neigh.
+
+
+
+
+6. Print the visited nodes, which represent the path.
