@@ -1,0 +1,19 @@
+BFS(graph, start, goal):
+    visited ← empty list
+    neigh ← empty queue
+
+    Add start to visited
+    Add start to neigh
+
+    While neigh is not empty:
+        key ← dequeue first element from neigh
+
+        If key is equal to goal:
+            Break
+
+        For each neighbor in graph[key]:
+            If neighbor is not in visited:
+                Add neighbor to visited
+                Enqueue neighbor into neigh
+
+    Print "PATH:", visited
