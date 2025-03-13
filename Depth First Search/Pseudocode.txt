@@ -1,0 +1,18 @@
+DFS(graph, start, goal):
+    visited ← empty list
+    frontier ← empty stack
+
+    Add start to visited
+    Add start to frontier
+
+    While frontier is not empty:
+        key ← pop last element from frontier
+        Print key
+
+        If key is equal to goal:
+            Break
+
+        For each neighbor in graph[key]:
+            If neighbor is not in visited:
+                Add neighbor to visited
+                Push neighbor onto frontier
