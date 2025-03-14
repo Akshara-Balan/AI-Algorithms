@@ -1,0 +1,28 @@
+INPUT: 
+  - A graph G with vertices V and edges E
+  - A list of available colors (domain)
+  
+OUTPUT: 
+  - A valid coloring assignment for the vertices
+
+BEGIN:
+  1. Define graph G as adjacency list
+  2. Define available colors in domain
+  3. Initialize an empty dictionary `colors` to store vertex-color mapping
+
+  FUNCTION promise(vertex, color):
+      FOR each neighbor in graph[vertex]:
+          IF colors[neighbor] == color:
+              RETURN False  // Color is already used by a neighbor
+      RETURN True  // Color is safe to use
+
+  FUNCTION color_vertex(vertex):
+      FOR each color in domain:
+          IF promise(vertex, color) is True:
+              RETURN color  // Assign first valid color
+
+  FOR each vertex in vertices:
+      Assign colors[vertex] = color_vertex(vertex)
+
+  PRINT colors
+END
