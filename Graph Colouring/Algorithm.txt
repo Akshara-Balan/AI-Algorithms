@@ -1,0 +1,27 @@
+1. Initialize the Graph
+
+Define the vertices and adjacency list of the graph.
+
+Define a set of available colors.
+
+
+
+2. Define a Constraint Function (promise)
+
+Check if a color can be assigned to a vertex without violating the constraint that no two adjacent vertices have the same color.
+
+
+
+3. Define a Function to Assign Colors (color_vertex)
+
+Iterate through available colors and assign the first valid color.
+
+
+
+4. Assign Colors to Each Vertex
+
+Loop through all vertices and assign colors based on constraints.
+
+
+
+5. Print the Color Mapping of Each Vertex
