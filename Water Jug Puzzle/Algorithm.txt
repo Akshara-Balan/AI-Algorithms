@@ -1,0 +1,15 @@
+Initialize the jugs:
+
+Set jug1 = 0 and jug2 = 0 (both jugs start empty).
+Set steps = 0 to count the number of steps.
+Perform operations until the goal is reached:
+
+If jug1 is empty, fill it completely.
+If jug2 is full, empty it.
+Otherwise, pour water from jug1 to jug2 until jug1 is empty or jug2 is full.
+Increment the step counter.
+Check if the goal is reached:
+
+If the target jug (jug1 or jug2) has the goal amount, stop.
+Output the sequence of steps taken to reach the goal.
+
