@@ -1,0 +1,13 @@
+Initialize Graph & Variables:
+  Store the graph as an adjacency matrix, where graph[i][j] represents the cost of traveling from city i to city j.
+  Define V as the number of cities.
+  Set a min_path variable to a large value (maxsize) to track the shortest tour.
+Generate All Possible Routes:
+  Create a list of all cities excluding the starting city.
+  Use permutations to generate all possible routes.
+Calculate Path Cost for Each Route:
+  For each permutation of cities, calculate the total travel cost.
+  Add the cost of returning to the starting city.
+Update the Minimum Cost:
+  If the current path cost is less than min_path, update min_path and store the best path sequence.
+Return the Minimum Path Cost and its Sequence.
