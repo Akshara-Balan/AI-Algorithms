@@ -1,0 +1,8 @@
+Start from the first column and place queens one by one.
+For each column, try placing a queen in each row:
+  Check if placing a queen at (row, col) is safe.
+  A position is safe if there is no queen in the same row, the same column, or any diagonal.
+If a safe position is found, place the queen and move to the next column.
+If all queens are placed successfully, print the board configuration.
+If no row is safe in a column, backtrack to the previous column and try a different row.
+Repeat the process until all solutions are found.
