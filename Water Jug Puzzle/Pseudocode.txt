@@ -1,0 +1,39 @@
+Procedure Water_Jug(jug1_capacity, jug2_capacity, goal_size, target_jug):
+    Initialize jug1 = 0, jug2 = 0, steps = 0
+    
+    While (jug1 != goal_size AND jug2 != goal_size):
+        Increment steps by 1
+        
+        If jug1 is empty:
+            Print "Step ", steps, " FILL JUG 1 TO CAPACITY ", jug1_capacity
+            Fill jug1 completely
+        
+        Else if jug2 is full:
+            Print "Step ", steps, " EMPTY THE JUG"
+            Empty jug2 completely
+        
+        Else:
+            Transfer = min(jug1, jug2_capacity - jug2)
+            Pour `Transfer` amount from jug1 to jug2
+            Print "Step ", steps, " POUR ", Transfer, " FROM JUG 1 TO JUG 2"
+        
+        If target_jug is jug1:
+            If jug1 equals goal_size:
+                Break
+        Else:
+            If jug2 equals goal_size:
+                Break
+    
+    Print "GOAL REACHED IN ", steps, " STEPS"
+
+Start
+    Input jug1_capacity
+    Input jug2_capacity
+    Input goal_size
+    Input target_jug
+    
+    If target_jug is neither 1 nor 2:
+        Print "INVALID"
+    Else:
+        Call Water_Jug(jug1_capacity, jug2_capacity, goal_size, target_jug)
+End
