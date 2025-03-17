@@ -1,6 +1,6 @@
 # AI-Algorithms
 
-This repository contains the lab experiments of AI ALgorithms Lab.
+This repository contains the lab experiments of AI Algorithms Lab.
 
 Experiments include:
 
