@@ -10,17 +10,11 @@ Experiments include:
 
 * A star Algorithm
 
-* Adversarial Search
-
-* Minimax Algorithm
-
 * N Queen's Algorithm
 
 * Tower of Hanoi
 
-* Backtracking for CSP
-
-* Local Search algorithms for CSP
+* Graph Colouring
 
 * Travelling Salesman Problem
 
