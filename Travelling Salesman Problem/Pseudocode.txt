@@ -1,0 +1,32 @@
+Procedure TSP(graph, start):
+    Initialize min_path to MAXSIZE
+    Initialize min_path_sequence to NULL
+    Create a list `vertex` containing all cities except `start`
+    
+    For each permutation `perm` of `vertex`:
+        Set current_path_weight to 0
+        Set k = start (starting city)
+        Initialize path_sequence with `start`
+        
+        For each city `j` in `perm`:
+            Add graph[k][j] to current_path_weight
+            Set k = j
+            Append j to path_sequence
+        
+        Add the cost of returning to `start` (graph[k][start]) to current_path_weight
+        Append `start` to path_sequence
+        
+        If current_path_weight < min_path:
+            Update min_path with current_path_weight
+            Update min_path_sequence with path_sequence
+    
+    Return min_path and min_path_sequence
+
+Start
+    Define graph as adjacency matrix
+    Define V (number of cities)
+    Set start city (s)
+    Call TSP(graph, s)
+    Print "Minimum Path Cost: ", min_path
+    Print "Path Sequence: ", min_path_sequence
+End
