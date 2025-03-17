@@ -1,0 +1,13 @@
+Procedure TowerOfHanoi(n, source, destination, auxiliary):
+    If n == 1 then:
+        Print "Move disk 1 from " + source + " to " + destination
+    Else:
+        TowerOfHanoi(n-1, source, auxiliary, destination)  // Move n-1 disks to auxiliary
+        Print "Move disk " + n + " from " + source + " to " + destination
+        TowerOfHanoi(n-1, auxiliary, destination, source)  // Move n-1 disks to destination
+End Procedure
+
+Start
+    Input n  // Number of disks
+    Call TowerOfHanoi(n, 'S', 'D', 'A')  // S = Source, D = Destination, A = Auxiliary
+End
