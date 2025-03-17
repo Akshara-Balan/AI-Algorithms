@@ -1,0 +1,27 @@
+Procedure Solve_N_Queens(N):
+    Initialize board[N][N] with 0
+    
+    If Place_Queens(board, 0, N) is True:
+        Print the board
+    Else:
+        Print "No solution exists"
+
+Procedure Place_Queens(board, col, N):
+    If col is equal to N:
+        Return True (All queens are placed)
+
+    For each row in 0 to N-1:
+        If Is_Safe(board, row, col, N) is True:
+            Place Queen at (row, col) (board[row][col] = 1)
+
+            If Place_Queens(board, col + 1, N) is True:
+                Return True
+
+            Remove Queen from (row, col) (board[row][col] = 0)  // Backtrack
+
+    Return False
+
+Procedure Is_Safe(board, row, col, N):
+    Check the same row, upper diagonal, and lower diagonal
+    If no queen is attacking, return True
+    Else, return False
