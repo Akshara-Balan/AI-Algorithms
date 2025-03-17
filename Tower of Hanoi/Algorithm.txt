@@ -1,0 +1,6 @@
+Base Case:
+  If there is only one disk (n = 1), move it directly from the source peg to the destination peg.
+Recursive Case:
+  Move n-1 disks from the source peg to the auxiliary peg, using the destination peg as an intermediate.
+  Move the nth (largest) disk from the source peg to the destination peg.
+  Move the n-1 disks from the auxiliary peg to the destination peg, using the source peg as an intermediate.
